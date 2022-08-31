@@ -1,3 +1,10 @@
 .page-title__title {
+  font-family: $base-font-family;
+  font-size: $bold;
   text-transform: uppercase;
+}
+
+.page-title__text {
+  font-family: $base-font-family;
+  color: $grey-rgba;
 }
