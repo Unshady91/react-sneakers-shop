@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  min-width: 768px;
+  min-width: $desktop-width;
   padding: 0 60px;
   margin: 0 auto;
 }
@@ -12,7 +12,7 @@ body {
   width: 20px;
   height: 20px;
   margin: 5px;
-  background-color: aliceblue;
+  background-color: $green;
 }
 
 .title {

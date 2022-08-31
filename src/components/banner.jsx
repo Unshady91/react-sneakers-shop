@@ -1,4 +1,5 @@
-const logo = require('../img/banner-logo.png');
+const logo = require("../img/banner-logo.png");
+const bannerSlider = require("../img/banner-slider.jpg");
 
 function Banner() {
   return (
@@ -24,10 +25,14 @@ function Banner() {
           </div>
         </div>
         <div className="banner__col2 banner-slider">
-          <img src="#" alt="Картинка" className="banner-slider__img" />
-          <span className="slide banner-slider__slide">
-            <svg className="svg" />
-          </span>
+          <img
+            src={bannerSlider}
+            alt="Лягушка с крышкой в руке"
+            className="banner-slider__img"
+            width="641"
+            height="300"
+          />
+          <span className="slide banner-slider__slide"></span>
         </div>
       </div>
     </section>

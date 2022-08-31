@@ -1,20 +1,19 @@
 .banner {
   margin-top: 45px;
-  background-color: bisque;
+  margin-bottom: 45px;
 }
 
 .banner__content {
-  background-color: $banner-bg;
   height: 300px;
   display: flex;
   justify-content: space-between;
-}
-
-.banner__col1 {
-  
+  border-radius: 20px;
+  background-color: $banner-bg;
 }
 
 .banner__col2 {
   width: 70%;
-  background-color: aquamarine;
+  background-color: $banner-bg;
+  display: flex;
+  justify-content: flex-end;
 }

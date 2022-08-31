@@ -1,0 +1,22 @@
+.banner-slider {
+  position: relative;
+}
+
+.banner-slider__img {
+  background-color: $green;
+}
+
+.banner-slider__slide {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  right: 5%;
+  border-radius: 50%;
+  background-color: $basic-white;
+  background-image: url("../../img/icons/slide.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
