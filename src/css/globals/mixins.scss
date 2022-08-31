@@ -10,3 +10,14 @@
   font-weight: $weight;
   line-height: $line-height;
 }
+
+@mixin link($width: 178px) {
+  @include fonts($size: 16px, $weight: 700, $line-height: 19px);
+  
+  width: $width;
+  background-color: $green-link;
+  color: $basic-white;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 30px;
+}

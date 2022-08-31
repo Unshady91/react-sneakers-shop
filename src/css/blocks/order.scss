@@ -1,0 +1,22 @@
+.order {
+  margin-top: 20px;
+  padding: 0 60px;
+}
+
+.order__title {
+  @include fonts($line-height: 46px, $size: 38px, $weight: 700);
+
+  width: 220px;
+  margin: 0 0 20px 0;
+}
+
+.order__quote {
+  color: $green;
+}
+
+.order__link {
+  @include link;
+
+  display: block;
+  padding: 10px 0;
+}
