@@ -1,3 +1,7 @@
+body {
+  @include fonts;
+}
+
 .container {
   min-width: 768px;
   padding: 0 60px;
@@ -12,6 +16,8 @@
 }
 
 .title {
+  @include fonts($line-height: 24px, $size: 20px, $weight: 700);
+
   display: block;
   margin: 0;
 }
@@ -19,4 +25,5 @@
 .text {
   display: block;
   margin: 0;
+  color: $grey-rgba;
 }

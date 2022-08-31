@@ -1,0 +1,12 @@
+@mixin fonts(
+  $line-height: $base-line-height,
+  $size: $base-font-size,
+  $style: $base-font-style,
+  $weight: $base-font-weight,
+) {
+  font-family: $base-font-family, sans-serif;
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $line-height;
+}

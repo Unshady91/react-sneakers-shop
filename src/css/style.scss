@@ -1,6 +1,8 @@
-@import 'globals/globals';
 @import 'globals/variables';
+@import 'globals/mixins';
+@import 'globals/globals';
 @import 'globals/fonts';
+
 
 @import 'blocks/header';
 @import 'blocks/cart';
