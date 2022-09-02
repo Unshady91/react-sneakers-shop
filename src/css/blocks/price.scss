@@ -1,0 +1,9 @@
+.price {
+  @include fonts($weight: 700);
+
+  color: $basic-black;
+}
+
+.price__grid-item {
+  grid-area: priceField;
+}

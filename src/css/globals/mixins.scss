@@ -21,3 +21,8 @@
   text-transform: uppercase;
   border-radius: 30px;
 }
+
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+}

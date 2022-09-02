@@ -1,0 +1,8 @@
+.card-price__grid {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "priceTag plus"
+    "priceField plus";
+}

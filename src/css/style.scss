@@ -1,9 +1,10 @@
+//globals
 @import 'globals/variables';
 @import 'globals/mixins';
 @import 'globals/globals';
 @import 'globals/fonts';
 
-
+//blocks
 @import 'blocks/header';
 @import 'blocks/cart';
 @import 'blocks/page-logo';
@@ -12,3 +13,10 @@
 @import 'blocks/banner-slider';
 @import 'blocks/order';
 @import 'blocks/banner-logo';
+@import 'blocks/cards';
+@import 'blocks/card';
+@import 'blocks/card-price';
+@import 'blocks/price-tag';
+@import 'blocks/price';
+@import 'blocks/plus';
+@import 'blocks/card-likes';
