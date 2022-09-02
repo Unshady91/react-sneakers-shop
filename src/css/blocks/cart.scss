@@ -7,10 +7,11 @@
   @include fonts($size: 14px, $line-height: 17px, $weight: 600);
   
   display: flex;
+  color: $price-color;
 }
 
 .cart__svg {
   width: 18px;
   height: 18px;
-  background-color: aquamarine;
+  background-color: transparent;
 }

@@ -4,16 +4,16 @@
 }
 
 .banner__content {
-  height: 300px;
   display: flex;
   justify-content: space-between;
+  height: 300px;
   border-radius: 20px;
   background-color: $banner-bg;
 }
 
 .banner__col2 {
-  width: 70%;
-  background-color: $banner-bg;
   display: flex;
   justify-content: flex-end;
+  width: 70%;
+  background-color: $banner-bg;
 }

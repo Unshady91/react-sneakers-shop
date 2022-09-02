@@ -24,5 +24,12 @@
 
 @mixin reset-list {
   list-style: none;
-  margin: 0;
+  padding: 0;
+}
+
+@mixin mini-button($width: 32px, $height: 32px, $color: $milk) {
+  width: $width;
+  height: $height;
+  border-radius: 7px;
+  background-color: $color;
 }
