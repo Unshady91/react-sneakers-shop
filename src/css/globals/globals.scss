@@ -1,11 +1,26 @@
 body {
-  @include fonts;
+  padding: 0;
+  margin: 0;
 }
 
 .container {
   min-width: $desktop-width;
   padding: 0 60px;
   margin: 0 auto;
+}
+
+.inner {
+  padding: 20px 30px;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $black-shadow-rgba;
 }
 
 .svg {

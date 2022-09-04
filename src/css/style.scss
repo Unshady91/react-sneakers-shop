@@ -1,10 +1,12 @@
 //globals
+@import-normalize;
 @import 'globals/variables';
 @import 'globals/mixins';
 @import 'globals/globals';
 @import 'globals/fonts';
 
 //blocks
+@import 'blocks/app';
 @import 'blocks/header';
 @import 'blocks/cart';
 @import 'blocks/page-logo';
@@ -21,3 +23,4 @@
 @import 'blocks/likes';
 @import 'blocks/card-likes';
 @import 'blocks/user';
+@import 'blocks/menu-cart';

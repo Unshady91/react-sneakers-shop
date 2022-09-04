@@ -1,7 +1,10 @@
 import { UserNav } from "./user-nav";
 const logo = require("../img/icons/page-logo.png");
 
-function Header() {
+function Header(props) {
+  const openCart = () => {
+    props.setCartOpened(true)
+  }
   return (
     <header className="header container">
       <div className="header__col1">
@@ -19,7 +22,7 @@ function Header() {
           <p className="text page-title__text">Магазин лучших кроссовок</p>
         </div>
       </div>
-      <UserNav />
+      <UserNav openCart={openCart} />
     </header>
   );
 }

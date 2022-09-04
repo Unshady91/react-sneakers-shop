@@ -1,0 +1,16 @@
+.menu-cart {
+  position: absolute;
+  z-index: 5;
+  width: 385px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: $basic-white;
+}
+
+.menu-cart__title {
+  @include fonts($size: 30px, $weight: 700);
+
+  margin-bottom: 20px;
+}

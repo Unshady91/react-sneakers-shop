@@ -1,7 +1,7 @@
-function UserNav() {
+function UserNav({openCart}) {
   return (
     <div className="header__col2 user-nav">
-      <div className="cart cart__content">
+      <div className="cart cart__content" onClick={openCart} >
         <svg
           className="svg cart__svg"
           width="20"

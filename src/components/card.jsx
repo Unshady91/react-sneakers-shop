@@ -29,7 +29,7 @@ function Card() {
           </span>
         </div>
         <p className="text card__text card__text--description">
-          Мужские Кроссовки Nike Blazer Mid Suede
+          Мужские Кроссовки<br/>Nike Blazer Mid Suede
         </p>
         <div className="card-price card-price__grid">
           <p className="text card-price__text price-tag price-tag__grid-item">
