@@ -1,4 +1,10 @@
+.content {
+  @include container($desktop-width);
+  
+  padding-top: 45px;
+}
+
 .content__title {
   display: block;
-  margin-bottom: 45px;
+  margin: 0;
 }

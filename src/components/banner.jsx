@@ -4,7 +4,7 @@ const logo = require("../img/banner-logo.png");
 
 function Banner() {
   return (
-    <section className="banner container">
+    <section className="banner">
       <div className="banner__content">
         <div className="banner__col1">
           <div className="banner-logo">

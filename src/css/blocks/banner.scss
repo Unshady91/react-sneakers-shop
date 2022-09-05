@@ -1,6 +1,8 @@
 .banner {
-  margin-top: 45px;
-  margin-bottom: 45px;
+  @include container($desktop-width);
+
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
 .banner__content {

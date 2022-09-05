@@ -1,4 +1,6 @@
 .header {
+  @include container($desktop-width);
+
   display: flex;
   justify-content: space-between;
   height: 130px;
