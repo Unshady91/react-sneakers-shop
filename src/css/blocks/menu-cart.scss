@@ -14,3 +14,23 @@
 
   margin-bottom: 20px;
 }
+
+.menu-cart__button {
+  position: relative;
+  background-color: transparent;
+}
+
+.menu-cart__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-cart__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-cart__item {
+  margin-bottom: 10px;
+}

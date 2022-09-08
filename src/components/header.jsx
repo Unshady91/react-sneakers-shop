@@ -1,12 +1,9 @@
-import { UserNav } from "./user-nav";
-const logo = require("../img/icons/page-logo.png");
+import { UserNav } from "./User-nav";
+import logo from '../img/icons/page-logo.png';
 
 function Header(props) {
-  const openCart = () => {
-    props.setCartOpened(true)
-  }
   return (
-    <header className="header container">
+    <header className="header">
       <div className="header__col1">
         <div className="page-logo">
           <img
@@ -22,7 +19,7 @@ function Header(props) {
           <p className="text page-title__text">Магазин лучших кроссовок</p>
         </div>
       </div>
-      <UserNav openCart={openCart} />
+      <UserNav clickHandler={props.cartToggler} />
     </header>
   );
 }

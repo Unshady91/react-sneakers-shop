@@ -1,5 +1,5 @@
-import { Order } from "./order";
-import { Slider } from "./slider";
+import { Order } from "./Order";
+import { Slider } from "./Slider";
 const logo = require("../img/banner-logo.png");
 
 function Banner() {

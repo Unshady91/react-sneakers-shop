@@ -13,7 +13,7 @@
 
 @mixin container($min-width) {
   min-width: $min-width;
-  padding: 0 60px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -38,4 +38,38 @@
   height: $height;
   border-radius: 7px;
   background-color: $color;
+}
+
+@mixin button($width:  32px, $height:  32px) {
+  width: $width;
+  height: $height;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid $grey-rgba;
+
+  &:before {
+    position: absolute;
+    z-index: 3;
+    content: '';
+    display: block;
+    width: 13px;
+    height: 2px;
+    top: 15px;
+    left: 8px;
+    background-color: $grey-rgba;
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    position: absolute;
+    z-index: 3;
+    content: '';
+    display: block;
+    width: 13px;
+    height: 2px;
+    top: 15px;
+    left: 8px;
+    background-color: $grey-rgba;
+    transform: rotate(-45deg);
+  }
 }

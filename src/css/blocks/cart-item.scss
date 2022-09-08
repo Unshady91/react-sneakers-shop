@@ -1,0 +1,36 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  width: 325px;
+  height: 119px;
+  border: 1px solid $grey-rgba;
+  border-radius: 20px;
+}
+
+.cart-item__img {
+  width: 70px;
+  height: 70px;
+  padding: 0 20px 0 20px;
+}
+
+.cart-item__description {
+  flex: 1;
+}
+
+.cart-item__text {
+  @include fonts;
+
+  color: $basic-black;
+  padding: 0 0 5px 0;
+}
+
+.cart-item__price {
+  @include fonts($weight: 700);
+
+  color: $basic-black;
+}
+
+.cart-item__button {
+  position: relative;
+  margin: 20px;
+}

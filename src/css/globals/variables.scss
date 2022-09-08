@@ -7,14 +7,15 @@ $grey-rgba: rgba(157, 157, 157, 1);
 $banner-bg: rgba(244, 239, 233, 1);
 $green: #8BB43C;
 $green-link: #A5D364;
-$heart: #FF8585;
+$bookmark: #FF8585;
 $grey-plus: #D3D3D3;
 $black-shadow-rgba: rgba(0,0,0, 0.3);
 $milk: #FEF0F0;
 $soft-milk: #F2F2F2;
 $price-color: #5C5C5C;
 $grey-light: #edebeb;
-$card-shadow: rgba(0, 0, 0, 0.05);
+$card-shadow: rgba(0, 0, 0, 0.1);
+$search-placeholder: #C4C4C4;
 
 // fonts
 $base-font-family: "Inter";
@@ -26,5 +27,5 @@ $page-title-size: 20px;
 $base-line-height: 13px;
 
 //sizes
-$app-width: 1400px;
-$desktop-width: 1150px;
+$app-width: 960px;
+$desktop-width: 768px;

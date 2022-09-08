@@ -1,0 +1,29 @@
+.search-box {
+  position: relative;
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.search-box__field {
+  width: 250px;
+  height: 45px;
+  border-radius: 10px;
+  padding-left: 54px;
+  border: 0;
+  border: none;
+
+  &::placeholder {
+    @include fonts($size: 14px, $line-height: 17px);
+
+    color: $search-placeholder;
+  }
+}
+
+.search-box__svg {
+  position: absolute;
+  z-index: 3;
+  top: 5px;
+  right: 210px;
+  background-color: transparent;
+}

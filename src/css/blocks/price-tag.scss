@@ -1,3 +1,8 @@
+.price-tag {
+  @include fonts;
+  text-transform: uppercase;
+}
+
 .price-tag__grid-item {
   grid-area: priceTag;
 }

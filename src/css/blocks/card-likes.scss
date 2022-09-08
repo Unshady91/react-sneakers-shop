@@ -1,6 +1,4 @@
 .card-likes {
-  @include mini-button;
-  
   position: absolute;
   top: 0;
   left: 10px;
@@ -8,4 +6,7 @@
 
 .card-likes__svg {
   background-color: transparent;
+  margin: 0;
+  width: 32px;
+  height: 32px;
 }

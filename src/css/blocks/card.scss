@@ -6,13 +6,12 @@
   border-radius: 40px;
   overflow: hidden;
   border: 2px solid $grey-light;
-  box-shadow:
-    0px 14px 30px $card-shadow;
 
-  &:hover {
-    margin-top: 10px;
-    transition: margin-top .15s ease-in;
-  }
+    &:hover {
+      box-shadow:
+      0px 14px 30px $card-shadow;
+      transition: all .10s ease-in-out;
+    }
 }
 
 .card__content {

@@ -1,3 +1,11 @@
 .App {
+  @include container($app-width);
+
   position: relative;
+  background-color: rgba(231, 246, 255, 1);
+  padding: 60px 60px;
+
+  @media (min-width: 758px) { //remove when developed
+    padding: 60px 0px;
+  }
 }
