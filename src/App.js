@@ -41,13 +41,8 @@ function App() {
   };
 
   const searchClickHandler = (evt) => {
-    setSearchValue(evt.target.value)
-    fetchedData.filter(item => {
-      if (item.title.includes(evt.target.value)) {
-        item.map()
-      }
-    });
-  }
+    setSearchValue(evt.target.value.toString().toLowerCase());
+  };
 
   return (
     <div className="App">
@@ -61,9 +56,11 @@ function App() {
           <h1 className="content__title">Все кроссовки</h1>
           <SearchBox searchClickHandler={searchClickHandler} />
           <ul className="list cards">
-            {fetchedData.map((obj, index) => (
-              <Card {...obj} key={index} onAddtoCart={onAddtoCart} />
-            ))}
+            {fetchedData
+              .filter((obj) => obj.title.toLowerCase().includes(searchValue))
+              .map((obj, index) => (
+                <Card {...obj} key={index} onAddtoCart={onAddtoCart} />
+              ))}
           </ul>
         </section>
       </div>
