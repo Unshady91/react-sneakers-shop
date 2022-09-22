@@ -9,6 +9,7 @@ import { SearchBox } from "./components/SearchBox";
 function App() {
   const [cartOpened, setCartOpened] = React.useState(false);
   const [fetchedData, setFetchedData] = React.useState([]);
+  const [searchValue, setSearchValue] = React.useState([]);
   const [error, setError] = React.useState(null);
   const [cartItems, setCartItems] = React.useState([]);
 
@@ -39,6 +40,10 @@ function App() {
     setCartItems((prev) => [...prev, data]);
   };
 
+  const searchClickHandler = (evt) => {
+    setSearchValue(evt.target.value.toString().toLowerCase());
+  };
+
   return (
     <div className="App">
       <div className="outter">
@@ -49,11 +54,13 @@ function App() {
         <Banner />
         <section className="content">
           <h1 className="content__title">Все кроссовки</h1>
-          <SearchBox />
+          <SearchBox searchClickHandler={searchClickHandler} />
           <ul className="list cards">
-            {fetchedData.map((obj, index) => (
-              <Card {...obj} key={index} onAddtoCart={onAddtoCart} />
-            ))}
+            {fetchedData
+              .filter((obj) => obj.title.toLowerCase().includes(searchValue))
+              .map((obj, index) => (
+                <Card {...obj} key={index} onAddtoCart={onAddtoCart} />
+              ))}
           </ul>
         </section>
       </div>
