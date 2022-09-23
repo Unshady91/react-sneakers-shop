@@ -1,0 +1,32 @@
+.menu-order {
+  height: 140px;
+}
+
+.menu-order__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-order__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-order__button {
+  @include fonts($size: 16px, $line-height: 19px);
+
+  width: 100%;
+  background-color: $green-button;
+  color: $basic-white;
+  border: 0;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+.menu-order__text {
+  @include fonts($size: 16px, $line-height: 19px);
+
+  &--bold {
+    @include fonts($weight: 700);
+  }
+}

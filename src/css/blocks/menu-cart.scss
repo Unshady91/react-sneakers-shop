@@ -1,4 +1,6 @@
 .menu-cart {
+  @include inner();
+
   position: absolute;
   z-index: 5;
   width: 385px;
@@ -7,6 +9,18 @@
   right: 0;
   margin: 0 auto;
   background-color: $basic-white;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-cart__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-cart__content {
+  max-height: 35%;
 }
 
 .menu-cart__title {
@@ -18,12 +32,6 @@
 .menu-cart__button {
   position: relative;
   background-color: transparent;
-}
-
-.menu-cart__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .menu-cart__list {

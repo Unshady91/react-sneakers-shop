@@ -6,7 +6,7 @@
 
 .cart__text {
   @include fonts($size: 14px, $line-height: 17px, $weight: 600);
-  
+
   display: flex;
   color: $price-color;
 }

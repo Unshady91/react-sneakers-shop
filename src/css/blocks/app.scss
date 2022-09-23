@@ -2,10 +2,10 @@
   @include container($app-width);
 
   position: relative;
-  background-color: rgba(231, 246, 255, 1);
   padding: 60px 60px;
+  background-color: rgba(231, 246, 255, 1);
 
-  @media (min-width: 758px) { //remove when developed
+  @media (min-width: 758px) {
     padding: 60px 0px;
   }
 }
