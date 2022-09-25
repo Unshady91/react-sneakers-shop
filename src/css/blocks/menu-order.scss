@@ -1,4 +1,8 @@
 .menu-order {
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> e2b3d51fd3d5664eabd3ffdd402658a6b50db21a
   height: 140px;
 }
 
@@ -13,14 +17,18 @@
 }
 
 .menu-order__button {
+<<<<<<< HEAD
   @include fonts($size: 16px, $line-height: 19px);
 
+=======
+>>>>>>> e2b3d51fd3d5664eabd3ffdd402658a6b50db21a
   width: 100%;
   background-color: $green-button;
   color: $basic-white;
   border: 0;
   border-radius: 18px;
   padding: 10px;
+<<<<<<< HEAD
 }
 
 .menu-order__text {
@@ -29,4 +37,6 @@
   &--bold {
     @include fonts($weight: 700);
   }
+=======
+>>>>>>> e2b3d51fd3d5664eabd3ffdd402658a6b50db21a
 }
