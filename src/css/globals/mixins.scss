@@ -19,7 +19,7 @@
 
 @mixin link($width: 178px) {
   @include fonts($size: 16px, $weight: 700, $line-height: 19px);
-  
+
   width: $width;
   background-color: $green-link;
   color: $basic-white;
@@ -76,4 +76,13 @@
 
 @mixin inner($top: 20px, $right: 30px, $bottom: 20px, $left: 30px) {
   padding: $top $right $bottom $left;
+}
+
+@mixin wide-button() {
+  width: 100%;
+  background-color: $green-button;
+  color: $basic-white;
+  border: 0;
+  border-radius: 18px;
+  padding: 10px;
 }

@@ -7,7 +7,7 @@ import { Card } from "./components/Card";
 import { SearchBox } from "./components/SearchBox";
 
 function App() {
-  const [cartOpened, setCartOpened] = React.useState(true);
+  const [cartOpened, setCartOpened] = React.useState(false);
   const [fetchedData, setFetchedData] = React.useState([]);
   const [searchValue, setSearchValue] = React.useState([]);
   const [error, setError] = React.useState(null);

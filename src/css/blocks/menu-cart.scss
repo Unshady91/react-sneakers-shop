@@ -19,10 +19,6 @@
   align-items: center;
 }
 
-.menu-cart__content {
-  max-height: 35%;
-}
-
 .menu-cart__title {
   @include fonts($size: 30px, $weight: 700);
 
