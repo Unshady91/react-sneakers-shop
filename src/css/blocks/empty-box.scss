@@ -1,0 +1,30 @@
+.empty-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 285px;
+  margin: 0 auto;
+  min-height: 100%;
+}
+
+.empty-box__img {
+  width: 120px;
+  height: 120px;
+}
+
+.empty-box__text {
+  @include fonts($size: 16px, $line-height: 24px);
+  opacity: 0.4;
+
+  &--bold {
+    @include fonts($size: 22px, $line-height: 27px, $weight: 700);
+
+    opacity: 1;
+  }
+}
+
+.empty-box__button {
+  @include wide-button()
+}

@@ -14,13 +14,7 @@
 
 .menu-order__button {
   @include fonts($size: 16px, $line-height: 19px);
-
-  width: 100%;
-  background-color: $green-button;
-  color: $basic-white;
-  border: 0;
-  border-radius: 18px;
-  padding: 10px;
+  @include wide-button();
 }
 
 .menu-order__text {
