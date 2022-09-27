@@ -44,11 +44,17 @@ function App() {
     setSearchValue(evt.target.value.toString().toLowerCase());
   };
 
+  const cartItemRemoveHandler = () => {};
+
   return (
     <div className="App">
       <div className="outter">
         {cartOpened ? (
-          <Cart cartToggler={cartToggler} items={cartItems} />
+          <Cart
+            cartToggler={cartToggler}
+            items={cartItems}
+            cartItemRemoveHandler={cartItemRemoveHandler}
+          />
         ) : null}
         <Header cartToggler={cartToggler} />
         <Banner />
