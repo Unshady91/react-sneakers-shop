@@ -31,7 +31,7 @@ function Cart(props) {
           <>
             <ul className="list menu-cart__list">
               {props.items.map((item, index) => (
-                <CartItem {...item} key={index} />
+                <CartItem {...item} key={index} onRemove={props.cartItemRemoveHandler} />
               ))}
             </ul>
             <footer className="menu-cart__footer">

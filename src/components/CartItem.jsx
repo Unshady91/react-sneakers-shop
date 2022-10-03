@@ -1,4 +1,4 @@
-function CartItem({index, title, price, imgUrl, cartItemRemoveHandler }) {
+function CartItem({ title, price, imgUrl, onRemove }) {
   return (
     <li className="item menu-cart__item">
       <div className="cart-item">
@@ -14,7 +14,7 @@ function CartItem({index, title, price, imgUrl, cartItemRemoveHandler }) {
         <button
           className="button cart-item__button"
           type="button"
-          onClick={(evt) => cartItemRemoveHandler({index})}
+          onClick={() => onRemove({title, price, imgUrl})}
         />
       </div>
     </li>

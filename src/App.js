@@ -1,5 +1,5 @@
 import "./css/style.scss";
-import React from "react";
+import React, { Children } from "react";
 import { Header } from "./components/Header.jsx";
 import { Banner } from "./components/Banner.jsx";
 import { Cart } from "./components/Cart";
@@ -44,7 +44,10 @@ function App() {
     setSearchValue(evt.target.value.toString().toLowerCase());
   };
 
-  const cartItemRemoveHandler = () => {};
+  const cartItemRemoveHandler = (obj) => {
+    let result = setCartItems(prev => prev.filter(item => {return item !== obj}))
+    console.log(result)
+  };
 
   return (
     <div className="App">
