@@ -4,12 +4,15 @@ import { ReactComponent as Unfavorite } from "../img/icons/unfavorite.svg";
 import { ReactComponent as Plus } from "../img/icons/cartAdded.svg";
 import { ReactComponent as Minus } from "../img/icons/cartNotAdded.svg";
 
-function Card({ title, price, imgUrl, onAddtoCart }) {
+function Card({ id, title, price, imgUrl, onAddtoCart }) {
   const [isFavorite, setFavorite] = React.useState(false);
   const [isAdded, setAdded] = React.useState(false);
 
   const cartAddedClickHandler = () => { //button listener
-    onAddtoCart({title, price, imgUrl}, setAdded(!isAdded));
+    setAdded(!isAdded)
+    if (!isAdded) {
+      onAddtoCart({id, title, price, imgUrl});
+    }
   };
 
   const favoriteClickHandler = () => {

@@ -31,7 +31,13 @@ function Cart(props) {
           <>
             <ul className="list menu-cart__list">
               {props.items.map((item, index) => (
-                <CartItem {...item} key={index} onRemove={props.cartItemRemoveHandler} />
+                <CartItem
+                  id={item.id}
+                  title={item.title}
+                  price={item.price}
+                  imgUrl={item.imgUrl}
+                  key={index}
+                  onRemove={props.onCartItemRemove} />
               ))}
             </ul>
             <footer className="menu-cart__footer">

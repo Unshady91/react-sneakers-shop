@@ -1,5 +1,5 @@
 import "./css/style.scss";
-import React, { Children } from "react";
+import React from "react";
 import { Header } from "./components/Header.jsx";
 import { Banner } from "./components/Banner.jsx";
 import { Cart } from "./components/Cart";
@@ -45,8 +45,12 @@ function App() {
   };
 
   const cartItemRemoveHandler = (obj) => {
-    let result = setCartItems(prev => prev.filter(item => {return item !== obj}))
-    console.log(result)
+    console.log(obj);
+    setCartItems((prev) =>
+      prev.filter((item) => {
+        return !item.id === obj.id
+      })
+    );
   };
 
   return (
@@ -56,7 +60,7 @@ function App() {
           <Cart
             cartToggler={cartToggler}
             items={cartItems}
-            cartItemRemoveHandler={cartItemRemoveHandler}
+            onCartItemRemove={cartItemRemoveHandler}
           />
         ) : null}
         <Header cartToggler={cartToggler} />
@@ -68,7 +72,14 @@ function App() {
             {fetchedData
               .filter((obj) => obj.title.toLowerCase().includes(searchValue))
               .map((obj, index) => (
-                <Card {...obj} key={index} onAddtoCart={onAddtoCart} />
+                <Card
+                  id={index}
+                  title={obj.title}
+                  price={obj.price}
+                  imgUrl={obj.imgUrl}
+                  key={index}
+                  onAddtoCart={onAddtoCart}
+                />
               ))}
           </ul>
         </section>
