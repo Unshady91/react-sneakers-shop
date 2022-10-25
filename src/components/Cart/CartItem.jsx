@@ -1,9 +1,9 @@
-function CartItem({id, title, price, imgUrl, onRemove }) {
+function CartItem({ id, title, price, imgUrl, onRemove }) {
   return (
     <li className="item menu-cart__item">
       <div className="cart-item">
         <img
-          src={require(`../img/${imgUrl}`)}
+          src={require(`../../img/${imgUrl}`)}
           alt="Кроссовки"
           className="cart-item__img"
         />
@@ -14,11 +14,12 @@ function CartItem({id, title, price, imgUrl, onRemove }) {
         <button
           className="button cart-item__button"
           type="button"
-          onClick={() => onRemove({id, title, price, imgUrl})}
+          onClick={() => onRemove({ id, title, price, imgUrl })}
         />
       </div>
     </li>
-  );
+
+  )
 }
 
-export { CartItem };
+export {CartItem}

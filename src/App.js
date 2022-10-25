@@ -45,10 +45,9 @@ function App() {
   };
 
   const cartItemRemoveHandler = (obj) => {
-    console.log(obj);
     setCartItems((prev) =>
       prev.filter((item) => {
-        return !item.id === obj.id
+        return item.id !== obj.id;
       })
     );
   };
