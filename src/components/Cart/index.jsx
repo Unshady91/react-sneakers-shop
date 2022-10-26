@@ -1,5 +1,5 @@
-import { CartList } from "./CartList";
-import { EmptyCart } from "./EmptyCart";
+import { CartList } from "./CartList"
+import { EmptyCart } from "./EmptyCart"
 
 function Cart({ cartToggler, items, onCartItemRemove }) {
   return (
@@ -20,7 +20,7 @@ function Cart({ cartToggler, items, onCartItemRemove }) {
         }
       </div>
     </div>
-  );
+  )
 }
 
-export { Cart };
+export { Cart }

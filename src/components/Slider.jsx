@@ -1,4 +1,4 @@
-const bannerSlider = require("../img/banner-slider.jpg");
+const bannerSlider = require("../img/banner-slider.jpg")
 
 function Slider() {
   return (
@@ -12,7 +12,7 @@ function Slider() {
       />
       <span className="slide banner-slider__slide"></span>
     </div>
-  );
+  )
 }
 
-export { Slider };
+export { Slider }

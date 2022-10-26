@@ -1,5 +1,5 @@
-import { UserNav } from "./User-nav";
-import logo from '../img/icons/page-logo.png';
+import { UserNav } from "./User-nav"
+import logo from '../img/icons/page-logo.png'
 
 function Header(props) {
   return (
@@ -21,7 +21,7 @@ function Header(props) {
       </div>
       <UserNav clickHandler={props.cartToggler} />
     </header>
-  );
+  )
 }
 
-export { Header };
+export { Header }

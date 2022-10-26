@@ -1,6 +1,6 @@
-import { Order } from "./Order";
-import { Slider } from "./Slider";
-const logo = require("../img/banner-logo.png");
+import { Order } from "./Order"
+import { Slider } from "./Slider"
+const logo = require("../img/banner-logo.png")
 
 function Banner() {
   return (
@@ -21,7 +21,7 @@ function Banner() {
         <Slider />
       </div>
     </section>
-  );
+  )
 }
 
-export { Banner };
+export { Banner }

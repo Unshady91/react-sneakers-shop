@@ -1,4 +1,4 @@
-import { ReactComponent as SearchIcon } from "../img/icons/search.svg";
+import { ReactComponent as SearchIcon } from "../img/icons/search.svg"
 
 function SearchBox(props) {
   return (
@@ -14,7 +14,7 @@ function SearchBox(props) {
         placeholder="Поиск..."
       />
     </div>
-  );
+  )
 }
 
 export { SearchBox }

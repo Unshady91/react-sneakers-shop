@@ -1,25 +1,28 @@
-import React from "react";
-import { ReactComponent as Favorite } from "../img/icons/favorite.svg";
-import { ReactComponent as Unfavorite } from "../img/icons/unfavorite.svg";
-import { ReactComponent as Plus } from "../img/icons/cartAdded.svg";
-import { ReactComponent as Minus } from "../img/icons/cartNotAdded.svg";
+import React from "react"
+import { ReactComponent as Favorite } from "../img/icons/favorite.svg"
+import { ReactComponent as Unfavorite } from "../img/icons/unfavorite.svg"
+import { ReactComponent as Plus } from "../img/icons/cartAdded.svg"
+import { ReactComponent as Minus } from "../img/icons/cartNotAdded.svg"
+import { useDispatch } from 'react-redux'
 
 function Card({ id, title, price, imgUrl, onAddtoCart }) {
-  const [isFavorite, setFavorite] = React.useState(false);
-  const [isAdded, setAdded] = React.useState(false);
-  const CardContext = React.createContext();
+  const [isFavorite, setFavorite] = React.useState(false)
+  const [isAdded, setAdded] = React.useState(false)
+  const CardContext = React.createContext()
+
+  const dispatch = useDispatch()
 
   const cartAddedClickHandler = () => { //button listener
-    setAdded(!isAdded);
+    setAdded(!isAdded)
 
     if (!isAdded) {
-      onAddtoCart({ id, title, price, imgUrl });
+      onAddtoCart({ id, title, price, imgUrl })
     }
-  };
+  }
 
   const favoriteClickHandler = () => {
-    setFavorite(!isFavorite);
-  };
+    setFavorite(!isFavorite)
+  }
 
   return (
     <CardContext.Provider value={isAdded}>
@@ -61,7 +64,7 @@ function Card({ id, title, price, imgUrl, onAddtoCart }) {
         </div>
       </li>
     </CardContext.Provider>
-  );
+  )
 }
 
-export { Card };
+export { Card }

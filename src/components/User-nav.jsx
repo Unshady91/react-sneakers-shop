@@ -1,5 +1,5 @@
-import { Bookmarks } from './Bookmarks';
-import { User } from './User';
+import { Bookmarks } from './Bookmarks'
+import { User } from './User'
 
 function UserNav({clickHandler}) {
   return (
@@ -43,4 +43,4 @@ function UserNav({clickHandler}) {
   );
 }
 
-export { UserNav };
+export { UserNav }

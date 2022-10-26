@@ -15,7 +15,7 @@ function Bookmarks() {
         />
       </svg>
     </div>
-  );
+  )
 }
 
-export { Bookmarks };
+export { Bookmarks }

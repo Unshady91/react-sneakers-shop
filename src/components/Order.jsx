@@ -8,7 +8,7 @@ function Order() {
         Купить
       </a>
     </div>
-  );
+  )
 }
 
-export { Order };
+export { Order }

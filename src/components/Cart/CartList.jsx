@@ -1,5 +1,5 @@
-import React from 'react';
-import {CartItem} from './CartItem';
+import React from 'react'
+import {CartItem} from './CartItem'
 
 function CartList({ items, onCartItemRemove }) {
 
@@ -23,13 +23,13 @@ function CartList({ items, onCartItemRemove }) {
             <div className="menu-order__top">
               <p className="menu-order__text">Итого:</p>
               <p className="menu-order__text menu-order__text--bold">
-                21498&nbsp;руб.
+                21498&nbspруб.
               </p>
             </div>
             <div className="menu-order__bottom">
               <p className="menu-order__text">Налог 5%:</p>
               <p className="menu-order__text menu-order__text--bold">
-                1074&nbsp;руб.
+                1074&nbspруб.
               </p>
             </div>
             <button type="submit" className="menu-order__button">
@@ -39,7 +39,7 @@ function CartList({ items, onCartItemRemove }) {
         </div>
       </footer>
     </>
-  );
+  )
 }
 
-export { CartList };
+export { CartList }
